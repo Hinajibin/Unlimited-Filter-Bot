@@ -20,6 +20,10 @@ from plugins.helpers import humanbytes
 from database.filters_mdb import filter_stats
 from database.users_mdb import add_user, find_user, all_users
 
+PHOTO = [
+    "https://telegra.ph/file/3163bb49a0b75341b0036.jpg",
+    
+    ]
 
 @trojanz.on_message(filters.command('id') & (filters.private | filters.group))
 async def showid(client, message):
